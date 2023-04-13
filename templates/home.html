@@ -7,134 +7,66 @@
     <title> Dhyan Jain Portfolio webpage</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+
+      h1 {
+        text-align : 'center' ;
+        
+        color : rgb(250, 255, 0);
+      }
+
+      h2 {
+        color : rgb(19, 244, 239);
+      }
+
+        
+    </style>
   </head>
   
   
   <body>
-    <div class='container'>
-      <h1 class="display-5" style="text-align : center ;"> <b> Dhyan Jain </b></h1>
-    <br>
+    <div class="text-bg-dark p-3">
       
-    <p style="font-size : 25px ;">I am an honest, hardworking professional who strives to upskill himself at every opportunity presented in life. I take an analytical approach to any problem I face. I need to push my skills to the limit to stand on my two feet in this highly competitive environment. </p>
-
-    <br>
-    <br>
-      
-    <h2 class="text-center"> Work Experience</h2>
-    <br>
-    <ol>
-      <li>
-        <h4> Chargeback Analyst at American Express</h4>
-                
-        <br>
-        
-      </li>
-      <li>
-        <h4> Project Management Intern at Kantar</h4>
-      
-        <br>
-        
-      </li>
-      <li>
-        <h4> Finance Intern at Smartknower</h4>
-        
-        <br>
-        
-      </li>
-      <li>
-        <h4> Business Analyst Intern at Smartknower</h4>
-        
-        <br>
-        
-      </li>
-      <li>
-        <h4> Data analyst Intern at Verzeo</h4>
-       
-      </li>
-    </ol>
-
-    <br>
-
-      <h2 class='text-center'> Education Background </h2>
       <br>
-      <ul>
-        <li> <b> B.E-MBA Degree from Thapar University , Patiala</b> | 2023 Graduated. 
-          <br>
-          MBA Specialization in Finance and Business Analytics : 8.40 CGPA
-        <br>
-        B.E-Computer Engineering : 7.02 CGPA</li>
-        <li> <b>Lotus Valley International School , Noida </b> | 2018 Graduated. Primary and Senior Secondary education <br>
-          10th Class -98.6% 
-          <br>
-          Science Stream ( PCM ) - 93.5% </li>
-      </ul>
-
-    <h2 class="text-center"> Skills Developed</h2>
       
-    <br>
-    <div class="center-block">
-      <button type="button" class="btn btn-outline-info"> Python Programming</button>
-      <button type="button" class="btn btn-outline-info"> JAVA programming Language</button>
-      <button type="button" class="btn btn-outline-info"> Solidity Programming</button>
-      <button type="button" class="btn btn-outline-info"> Blockchain Development</button>
-      <button type="button" class="btn btn-outline-info"> SPSS</button>
-      <button type="button" class="btn btn-outline-info"> Power BI</button>
-      <button type="button" class="btn btn-outline-info"> Tableau</button>
-      <button type="button" class="btn btn-outline-info"> Data Analysis</button>
-      <button type="button" class="btn btn-outline-info"> Unity Game engine</button>
-      <button type="button" class="btn btn-outline-info"> Blender Animation studio</button>
-      <button type="button" class="btn btn-outline-info"> Stock market analysis</button>
-      <button type="button" class="btn btn-outline-info"> FOREX-analysis</button>
-      <button type="button" class="btn btn-outline-info"> Financial Accounting </button>
-      <button type="button" class="btn btn-outline-info"> IPO and Share Market Analysis</button>
-      <button type="button" class="btn btn-outline-info"> Company Financial Statement making and its analysis </button>
-      <button type="button" class="btn btn-outline-info"> Portfolio management </button>
-      <button type="button" class="btn btn-outline-info"> Corporate Valuation and Financial Management </button>
-    </div>
-    <br>
-    <br>
-      
-
-    <h2 class="text-center"> Certification Acquired </h2>  
-      
-      <ul>
-        <li> <b> Python programming language - Coding Ninjas </b></li>
-        <li> <b> Python Programming - Freecodecamp </b></li>
-        <li> <b> Blockchain Development - Freecodecamp </b></li>
-        <li> <b> Web Development using Flask , HTML , CSS - Jovian.ai </b></li>
-      </ul>
-    <br>
-
-    <h2 class="text-center"> Language Proficiency  </h2>  
-      
-      <ul>
-        <li> <b>French - Writing and Speaking Proficiency </b></li>
-        <li> <b> English - Writing and Speaking Proficiency </b></li>
-        <li> <b> Hindi - Writing and Speaking Proficiency </b></li>
-      </ul>
-    <br>  
-    
+      <h1>I am an honest, hardworking professional who strives to upskill himself at every opportunity presented in life. I take an analytical approach to any problem I face. I need to push my skills to the limit to stand on my two feet in this highly competitive environment. </h1>
   
-    <h2 class="text-center"> Contact Us </h2>
+      <br>
+      <br> 
+      {% include "workex.html" %} 
+      <br>
+      {% include "edubkgrnd.html" %}
+      <br>
+      {% include "skills.html" %}
+      <br>
+      <br>
+      {% include "certificateacq.html" %}
+      <br>
+      {% include "languages.html" %}
+      <br>  
+      
     
-    
-    <table>
-      <tr>
-        <td> <b>Email Id:</b> </td>
-        <td> <p> dhyanjain2701@gmail.com</p></td>
-      </tr>
-      <tr>
-        <td><b>LinkedIn Id:</b></td>
-        <td><p>https://www.linkedin.com/in/dhyanjain2701/</p></td>
-      </tr>
-      <tr>
-        <td> <b>Contact Number :</b></td>
-        <td><p>+91-9873875477</p></td>
-      </tr>
-    </table>
+      <h2 class="text-center"> Contact Us </h2>
+      
+      
+      <table>
+        <tr>
+          <td> <b>Email Id:</b> </td>
+          <td> <p> dhyanjain2701@gmail.com</p></td>
+        </tr>
+        <tr>
+          <td><b>LinkedIn Id:</b></td>
+          <td><p>https://www.linkedin.com/in/dhyanjain2701/</p></td>
+        </tr>
+        <tr>
+          <td> <b>Contact Number :</b></td>
+          <td><p>+91-9873875477</p></td>
+        </tr>
+      </table>
+       
+       
      
-     
-   
     </div>
     
   </body>
